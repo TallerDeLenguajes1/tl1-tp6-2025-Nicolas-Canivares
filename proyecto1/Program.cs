@@ -15,6 +15,14 @@ if (esNumero)
         numeroInvertido = (numeroInvertido * 10) + resto;
         numero /= 10;
     }
+    
+    Console.WriteLine("Numero invertido: " + numeroInvertido);
+}
+else
+{
+    Console.WriteLine("NO INGRESO UN NUMERO");
 }
 
-Console.WriteLine("Numero invertido: " + numeroInvertido);
+
+//Ejercicio02 Calculadora
+
