@@ -24,7 +24,7 @@ else
 }
 
 
-//Ejercicio02 Calculadora
+//Ejercicio02 Calculadora Version 1
 
 int opcion = 0;
 do
