@@ -150,3 +150,13 @@ do
     }
 
 } while (opcion != 5);
+
+// Ejercicio 4
+
+// Conversor de tipo ToString()
+// Comparador de cadenas Compare(), CompareTo() == y !=
+// Mayusculas: ToUpper ,  Minusculas: ToLower()
+// Acceso a los caracteres indivuales: SubString(), Replace(), Split(), Trim()
+// Búsqueda y manipulación de una cadena: IndexOf() LastIndexOf, StartsWith y
+// EndsWith. Split()
+
