@@ -95,7 +95,6 @@ do
 } while (opcion != 7);
 //Ejercicio02 Calculadora Version 1
 
-int opcion = 0;
 do
 {
     Console.WriteLine("Que operacion desea realizar?");
