@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //Ejercicio1 Invertir Numero
+using System.ComponentModel;
+
 Console.WriteLine("Ingrese un numero: ");
 var numeroIngresado = Console.ReadLine();
 int numero;
@@ -146,7 +148,7 @@ do
 
     if (numero1 != 0 || numero2 != 0)
     {
-        Console.WriteLine("El resultado es: " + resultado);
+        Console.WriteLine("El resultado de " + numero1.ToString() + " y " + numero2.ToString() + " es: " + resultado.ToString());
     }
 
 } while (opcion != 5);
@@ -159,4 +161,61 @@ do
 // Acceso a los caracteres indivuales: SubString(), Replace(), Split(), Trim()
 // Búsqueda y manipulación de una cadena: IndexOf() LastIndexOf, StartsWith y
 // EndsWith. Split()
+
+Console.WriteLine("Ingrese una cadena: ");
+string cadenaIngresada = Console.ReadLine();
+
+if (cadenaIngresada != null)
+{
+    int longitudCadena = cadenaIngresada.Length;
+    Console.WriteLine("Longitud de la cadena: " + longitudCadena);
+}
+
+Console.WriteLine("Ingrese otra cadena: ");
+string cadenaIngresada2 = Console.ReadLine();
+
+if (cadenaIngresada != null && cadenaIngresada2 != null)
+{
+    string concatenacion = string.Concat(cadenaIngresada, cadenaIngresada2);
+    Console.WriteLine("Concatenacion " + concatenacion);
+}
+
+if (cadenaIngresada != null)
+{
+    if (cadenaIngresada.Length >= 5)
+    {
+        string subcadena = cadenaIngresada.Substring(0, 5);
+        Console.WriteLine("Subcadena: " + subcadena);
+    }
+}
+
+foreach (char letra in cadenaIngresada)
+{
+    Console.WriteLine(letra);
+}
+
+// Buscar la ocurrencia de una palabra determinada en la cadena ingresada
+
+Console.WriteLine("Ingrese una palabra a buscar en la cadena1: ");
+string palabraABuscar = Console.ReadLine();
+
+if (cadenaIngresada != null && palabraABuscar != null)
+{
+    int posicion = cadenaIngresada.IndexOf(palabraABuscar);
+    if (posicion != -1)
+    {
+        Console.WriteLine("La palabra ingresada se encuentra en la posicion: " + posicion + " de la cadena ingresada");
+    }
+}
+
+// Convierta la cadena a mayúsculas y luego a minúsculas.
+
+if (cadenaIngresada != null)
+{
+    string cadenaIngresadaMayusculas = cadenaIngresada.ToUpper();
+    Console.WriteLine("Cadena ingresada en mayusculas: " + cadenaIngresadaMayusculas);
+    string cadenaIngresadaMinusculas = cadenaIngresada.ToLower();
+    Console.WriteLine("Cadena ingresada en minusculas: " + cadenaIngresadaMinusculas);
+
+}
 
